@@ -1,0 +1,27 @@
+{
+  "name": "check-url",
+  "description": "Check a remote URL's HTTP response.",
+  "version": "1.0.0",
+  "author": "Peter deHaan <peter@deseloper.com> (https://about.me/peterdehaan)",
+  "bugs": {
+    "url": "https://github.com/pdehaan/check-url/issues"
+  },
+  "dependencies": {
+    "node-fetch": "^1.6.0"
+  },
+  "devDependencies": {
+    "promise-queue": "^2.2.3",
+    "tippy-top-sites": "^0.2.0"
+  },
+  "homepage": "https://github.com/pdehaan/check-url#readme",
+  "keywords": [],
+  "license": "WTFPL",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdehaan/check-url.git"
+  },
+  "scripts": {
+    "test": "node test"
+  }
+}
