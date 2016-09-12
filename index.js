@@ -10,15 +10,17 @@ exports.checkUrl = checkUrl;
  * @return {Promise}       A Promise which resolves with the `content-type`, `ok`, `status`, `statusText`, `url`, and optional `data` values.
  */
 function checkUrl(url, method='HEAD', data={}) {
+  const origUrl = url;
   return fetch(url, {method})
-    .then((res) => {
+    .then(({headers, ok, status, statusText, url}) => {
+      const contentType = headers.get('content-type');
       return Object.assign(data, {
-        contentType: res.headers.get('content-type'),
-        ok: res.ok,
-        origUrl: url,
-        status: res.status,
-        statusText: res.statusText,
-        url: res.url
+        contentType,
+        ok,
+        origUrl,
+        status,
+        statusText,
+        url
       });
     });
 }

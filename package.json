@@ -1,7 +1,7 @@
 {
   "name": "check-url",
   "description": "Check a remote URL's HTTP response.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Peter deHaan <peter@deseloper.com> (https://about.me/peterdehaan)",
   "bugs": {
     "url": "https://github.com/pdehaan/check-url/issues"
